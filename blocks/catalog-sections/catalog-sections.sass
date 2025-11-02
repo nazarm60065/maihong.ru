@@ -1,0 +1,97 @@
+.catalog-sections-wrapper
+  margin-bottom: 80px
+
+.catalog-sections__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 28px
+  line-height: 120%
+  margin-bottom: 32px
+
+.catalog-sections-list
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: 8px
+
+.catalog-sections-card
+  position: relative
+  z-index: 0
+  background-color: #E3E3E3
+  min-height: 180px
+  border-radius: 24px
+  overflow: hidden
+  padding: 16px
+
+.catalog-sections-card-bg
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: -1
+  text-align: right
+
+.catalog-sections-card-bg__img
+  width: auto
+  height: auto
+  max-width: 100%
+  max-height: 100%
+
+.catalog-sections-card__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 18px
+  line-height: 120%
+  word-break: break-word
+  hyphens: auto
+
+.catalog-sections__button
+  font-family: "Stolzl", sans-serif
+  display: inline-block
+  width: 100%
+  font-weight: 500
+  font-size: 16px
+  line-height: 100%
+  text-transform: uppercase
+  color: #fff
+  background-color: #DA291C
+  border-radius: 56px
+  padding: 18px 24px
+  text-align: center
+
++mq(tablet, max)
+  .catalog-sections-button-container
+    margin-top: 16px
+    grid-column-start: 1
+    grid-column-end: -1
+
++mq(tablet)
+  .catalog-sections-list
+    grid-template-columns: repeat(3, minmax(0, 1fr))
+
+  .catalog-sections-button-container
+    display: flex
+
+  .catalog-sections__button
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: none
+    background: linear-gradient(137.54deg, #981119 0.9%, #DA291C 101.96%)
+    box-shadow: -15px 24px 11px rgba(176, 176, 176, 0.01), -8px 13px 9px rgba(176, 176, 176, 0.05), -4px 6px 7px rgba(176, 176, 176, 0.09), -1px 1px 4px rgba(176, 176, 176, 0.1)
+    border-radius: 24px
+
++mq(tablet)
+  .catalog-sections-list
+    gap: 36px 16px
+
+  .catalog-sections-card
+    padding: 16px 24px 24px
+    min-height: 272px
+
+  .catalog-sections-card__title
+    font-size: 32px
+
+  .catalog-sections__button
+    padding: 24px
+    font-size: 32px
+    line-height: 1

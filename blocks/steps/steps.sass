@@ -1,0 +1,115 @@
+.steps-wrapper
+  margin-bottom: 80px
+
+.steps-top
+  margin-bottom: 32px
+
+.steps__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 28px
+  line-height: 120%
+
+.steps__subtitle
+  margin-top: 12px
+  font-family: "Stolzl", sans-serif
+  font-weight: 400
+  font-size: 18px
+  line-height: 120%
+
+.steps
+  display: grid
+  gap: 16px
+  grid-template-columns: minmax(0, 1fr)
+
+.steps-main
+  background-color: #D9D9D9
+  padding: 24px
+  border-radius: 16px
+  overflow: hidden
+
+.steps-main__text
+  font-family: "Stolzl", sans-serif
+  font-weight: 400
+  font-size: 20px
+  line-height: 120%
+
+.steps-button-container
+  margin-top: 24px
+
+.steps__button
+  display: inline-block
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+  padding: 14px 32px 16px
+  color: #fff
+  background-color: #DA291C
+  border-radius: 58px
+
+.steps-main-image
+  text-align: right
+  margin: 15px -24px -24px
+
+.steps-main-image__img
+  width: auto
+  height: auto
+  max-width: 100%
+
+
+.steps-list
+  display: grid
+  grid-template-columns: minmax(0, 1fr)
+  gap: 16px
+
+.steps-card
+  background-color: #E3E3E3
+  padding: 16px
+  display: flex
+  align-items: center
+  gap: 8px
+  border-radius: 16px
+
+.steps-card__index
+  flex-shrink: 0
+  width: 64px
+  height: 64px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: #fff
+  border-radius: 16px
+  color: #DA291C
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 40px
+  line-height: 120%
+
+.steps-card__text
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+
+
++mq(tablet, max)
+  .steps__subtitle
+    display: none
+
++mq(tablet)
+  .steps
+    display: flex
+    gap: 16px
+  .steps-main
+    display: flex
+    flex-direction: column
+
+  .steps-main__text
+    display: none
+
+  .steps-button-container
+    order: 1
+
++mq(desktop)
+  .steps__subtitle
+    margin-top: 40px
+    font-size: 24px

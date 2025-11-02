@@ -1,0 +1,72 @@
+.videos-wrapper
+  margin-bottom: 80px
+
+.videos__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 28px
+  line-height: 120%
+  margin-bottom: 32px
+  
+.videos-slider-wrapper
+  position: relative
+
+.videos-slider
+  overflow: visible
+
+.videos-slide
+  position: relative
+  width: 176px
+  z-index: 0
+  border-radius: 24px
+  overflow: hidden
+  height: 313px
+
++mq(desktop, max)
+  .videos-slider__arrow
+    display: none
+
++mq(desktop)
+  .videos-wrapper
+    margin-bottom: 120px
+
+  .videos__title
+    font-size: 40px
+    margin-bottom: 40px
+
+  .videos-slider
+    overflow: hidden
+
+  .videos-slider__arrow
+    +button-preset
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background-color: #E3E3E3
+    padding: 14px
+    position: absolute
+    top: 50%
+    margin-top: -25px
+    z-index: 4
+    transition: opacity $default-transition
+
+  .videos-slider__arrow_prev
+    text-indent: -3px
+    left: -25px
+
+  .videos-slider__arrow_next
+    text-indent: 3px
+    right: -25px
+
+
+  .videos-slider__arrow_disabled
+    opacity: 0
+    cursor: default
+
+  .videos-slider__arrow_lock
+    display: none
+
+  .videos-slide
+    width: 200px
+    height: 356px
+

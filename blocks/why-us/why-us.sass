@@ -1,0 +1,134 @@
+.why-us-wrapper
+  margin-bottom: 80px
+
+.why-us__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 28px
+  line-height: 120%
+  margin-bottom: 32px
+
+.why-us-main
+  display: grid
+  grid-template-columns: minmax(0, 1fr)
+  gap: 12px
+  max-width: 361px
+  margin: auto
+
+.why-us-main-card
+  position: relative
+  z-index: 0
+  border-radius: 24px
+  overflow: hidden
+  outline: 1px solid #D0D3D4
+  min-height: 156px
+  padding: 24px
+  color: #fff
+
+.why-us-main-card-bg
+  +absoluteFluid
+  z-index: -1
+  border-radius: 24px
+  overflow: hidden
+
+.why-us-main-card-bg__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+.why-us-main-card__value
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 48px
+  line-height: 120%
+  letter-spacing: -0.03em
+
+.why-us-main-card__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 48px
+  line-height: 120%
+
+.why-us-main-card__desc
+  font-family: "Stolzl", sans-serif
+  margin-top: 12px
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+
+.why-us-list
+  margin: auto
+  max-width: 361px
+  margin-top: 32px
+  display: grid
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+  gap: 40px 25px
+
+.why-us-card-image
+  width: 100%
+  height: 62px
+  line-height: 0
+  margin-bottom: 20px
+
+.why-us-card-image__img
+  max-width: 100%
+  max-height: 100%
+
+.why-us-card__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 18px
+  line-height: 120%
+
+.why-us-card__text
+  margin-top: 12px
+  font-family: "Stolzl", sans-serif
+  font-weight: 400
+  font-size: 14px
+  line-height: 120%
+  color: #909090
+
++mq(tablet)
+  .why-us-main
+    max-width: 734px
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+
+  .why-us-list
+    max-width: 734px
+
++mq(desktop)
+  .why-us-wrapper
+    margin-bottom: 125px
+
+  .why-us-main
+    max-width: 1280px
+    gap: 16px
+
+  .why-us__title
+    font-size: 40px
+    margin-bottom: 20px
+
+  .why-us-main-card
+    min-height: 188px
+    padding: 24px 20px
+
+  .why-us-main-card__value
+    font-size: 64px
+    letter-spacing: 0
+
+  .why-us-main-card__title
+    font-size: 64px
+
+  .why-us-main-card__desc
+    font-size: 24px
+
+  .why-us-list
+    margin-top: 32px
+    max-width: 1280px
+    grid-template-columns: repeat(6, minmax(0, 1fr))
+    gap: 24px 16px
+
+  .why-us-card__title
+    font-size: 20px
+
+  .why-us-card__text
+    font-size: 16px

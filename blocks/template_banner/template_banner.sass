@@ -1,0 +1,30 @@
+.template_banner__button-container
+  position: relative
+
+.template_banner__button-container .template_banner__button
+  padding-left: 80px
+  padding-right: 80px
+
+.template_banner__button-img
+  width: 24.62vw
+  max-width: 179px
+  line-height: 0
+  position: absolute
+  top: 50%
+  right: -10px
+  transform: translateY(-50%)
+
++mq(tablet)
+  .template_banner__button-container
+    display: inline-block
+
+  .template_banner__button-img
+    width:  80px
+
++mq(desktop)
+  .template_banner__button-container .template_banner__button
+    padding: 24px 72px
+
+  .template_banner__button-img
+    width: 179px
+    right: -105px
