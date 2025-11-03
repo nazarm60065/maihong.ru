@@ -293,9 +293,6 @@ $pageConfig = [
           <div class="template_geography__point j-show-review" data-citi-id="2178" data-city="Екатеринбург">
             <div class="template_geography__hint">Екатеринбург</div>
           </div>
-          <div class="template_geography__point j-show-review" data-citi-id="2177" data-city="Москва">
-            <div class="template_geography__hint">Москва</div>
-          </div>
           <div class="template_geography__point j-show-review" data-citi-id="2175" data-city="Казань">
             <div class="template_geography__hint">Казань</div>
           </div>
@@ -307,9 +304,6 @@ $pageConfig = [
           </div>
           <div class="template_geography__point j-show-review" data-citi-id="18" data-city="Волгоград">
             <div class="template_geography__hint">Волгоград</div>
-          </div>
-          <div class="template_geography__point j-show-review" data-citi-id="11" data-city="Москва">
-            <div class="template_geography__hint">Москва</div>
           </div>
         </div>
       </div>
