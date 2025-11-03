@@ -1,10 +1,21 @@
 @import "../../variables/variables"
 @import "../../mixins/mixins"
+@import "../../tab/tab"
+@import "../../dropdown/dropdown"
+@import "../../header/header"
 @import "../../template_banner/template_banner"
+@import "../../template_geography/template_geography"
 @import "../../why-us/why-us"
 @import "../../catalog-sections/catalog-sections"
 @import "../../videos/videos"
 @import "../../steps/steps"
+@import "../../work/work"
+@import "../../float-contacts/float-contacts"
 
 .link-as-card
   +absoluteFluid
+
++mq(desktop)
+  main
+    padding-top: 216px
+

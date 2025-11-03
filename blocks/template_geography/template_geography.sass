@@ -1,0 +1,105 @@
+.template_geography--v3
+  display: block
+  margin-bottom: 80px
+  padding: 0
+
+.template_geography--v3 .template_geography__header
+  position: static
+
+.template_geography--v3 .template_geography__header h2
+  font-family: "Stolzl", sans-serif
+  font-size: 28px
+  font-weight: 500
+  line-height: 120%
+
+.template_geography--v3 .template_geography__header p
+  font-size: 16px
+  font-weight: 400
+  line-height: 120%
+  max-width: none
+  margin: 24px 0
+
+.template_geography--v3 .template_geography__header p:first-child
+  margin-top: 0
+
+.template_geography--v3 .template_geography__header p:last-child
+  margin-bottom: 0
+
+.template_geography--v3 .template_geography__bg
+  margin-top: 24px
+  margin-bottom: 0
+
+.template_geography--v3 .template_geography__symbols
+  margin-top: 24px
+
+.template_geography--v3 .template_geography__symbols h3
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 24px
+  line-height: 120%
+  margin-bottom: 20px
+
+.template_geography--v3 .symbols
+  flex-direction: column
+  gap: 12px
+
+.template_geography--v3 .symbols__item
+  border-width: 1px
+  justify-content: center
+
+.template_geography--v3 .template_geography__point
+  width: 16px
+  height: 20px
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='40' fill='none' viewBox='0 0 32 40'%3E%3Cpath fill='%23da291c' d='M31.98 16.979c-.432 8.827-8.626 15.865-14.793 21.178-.403.346-.809.696-1.221 1.029-.702.565-9.158-8.416-9.941-9.34C2.988 26.266.147 21.87.007 17.015-.253 7.955 6.859 0 15.966 0 24.29 0 31.698 7.403 31.99 15.725q.024.63-.01 1.254'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='m12.567 24.788.975-2.68L9.014 8.562l7.246 5.083 7.176-5.084-4.46 13.545 1.046 2.68h-2.926l-.836-2.333-.767 2.333zm4.46-5.222 2.588.008-2.088-1.53.811-2.461-2.101 1.516-2.088-1.53.789 2.466-2.101 1.516 2.589.009.788 2.467.811-2.461z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat center / contain
+
+.template_geography--v3 .template_geography__hint
+  display: block
+  font-weight: 400
+  font-size: 8px
+  line-height: 120%
+  text-align: center
+  background-color: transparent
+  color: #DA291C
+  backdrop-filter: none
+  box-shadow: none
+  top: 100%
+  left: 50%
+  transform: translateX(-50%)
+  padding: 0
+
+
++mq(tablet)
+  .template_geography--v3 .template_geography__point
+    width: 24px
+    height: 30px
+
+  .template_geography--v3 .template_geography__hint
+    font-size: 12px
+
++mq(desktop)
+  .template_geography--v3 .template_geography__header h2
+    font-size: 40px
+    margin-bottom: 34px
+
+  .template_geography--v3 .template_geography__header p
+    font-size: 16px
+    margin: 24px 0
+    max-width: 744px
+
+  .template_geography--v3 .template_geography__symbols h3
+    font-size: 32px
+    margin-bottom: 36px
+
+  .template_geography--v3 .template_geography__point
+    width: 32px
+    height: 40px
+
+  .template_geography--v3 .template_geography__hint
+    font-size: 15px
+
+  .template_geography--v3 .symbols
+    flex-direction: row
+    gap: 24px
+
+  .template_geography--v3 .symbols__item
+    padding: 10px 16px 12px

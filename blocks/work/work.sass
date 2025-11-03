@@ -1,0 +1,359 @@
+.work-wrapper
+  margin-bottom: 80px
+
+.work__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 28px
+  line-height: 120%
+  margin-bottom: 32px
+
+.work-tabs-slider
+  overflow: visible
+  padding-bottom: 20px
+  border-bottom: 1px solid #E3E3E3
+
+.work-tabs-panels
+  transition: height $default-transition
+
+.work-tabs-slide
+  width: auto
+
+.work-tabs-slide__button
+  +button-preset
+  border-radius: 44px
+  padding: 11px 16px 13px
+  background-color: #F7F7F8
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+  outline: 1px solid transparent
+  transition: outline $default-transition
+
+.work-tabs-slide__button_active
+  outline-color: #DA291C
+
+.work-inner-tabs
+  padding-top: 20px
+
+.work-inner-tabs-panels
+  transition: height $default-transition
+
+.work-dropdown
+  margin-bottom: 30px
+  z-index: 4
+
+.work-dropdown.dropdown_expand .work-dropdown-current__icon
+  transform: rotate(90deg)
+
+.work-dropdown-list
+  max-height: 201px
+  overflow: hidden auto
+
+.work-dropdown-current
+  +button-preset
+  padding: 10px 0
+  border-bottom: 1px solid #E3E3E3
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+
+.work-dropdown-current__icon
+  width: 20px
+  height: 20px
+  flex-shrink: 0
+  +svg
+
+.work-dropdown__button
+  +button-preset
+  display: block
+  width: 100%
+  text-align: left
+  padding: 10px 0
+  border-bottom: 1px solid #E3E3E3
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+  border-bottom: 1px solid #E3E3E3
+  transition: border $default-transition
+
+.work-dropdown__button_tab-active
+  border-color: #DA291C
+
+.work-item-top
+  margin-bottom: 20px
+
+.work-item__title
+  font-family: "Stolzl", sans-serif
+  font-weight: 500
+  font-size: 18px
+  line-height: 120%
+
+.work-item-slider
+  width: 332px
+  margin: auto
+  border-radius: 16px
+  overflow: hidden
+
+.work-item-slide
+  width: 100%
+  height: 192px
+  border-radius: 16px
+  overflow: hidden
+  line-height: 0
+
+.work-item-slide__img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.work-item-slider-arrows
+  position: absolute
+  right: 16px
+  bottom: 12px
+  display: flex
+  align-items: center
+  gap: 8px
+  z-index: 4
+
+.work-item-slider__arrow
+  +button-preset
+  background-color: #FFFFFF
+  width: 36px
+  height: 36px
+  border-radius: 50%
+  border: 1px solid #E3E3E3
+  padding: 6px
+  transition: opacity $default-transition
+  +svg
+
+.work-item-slider__arrow_prev
+  text-indent: -3px
+
+.work-item-slider__arrow_next
+  text-indent: 2px
+
+.work-item-slider__arrow_disabled
+  opacity: 0.5
+  cursor: default
+
+.work-item-slider__arrow_lock
+  display: none
+
+.work-item-video-button-container
+  margin-top: 16px
+  text-align: center
+
+.work-item-video__button
+  display: inline-block
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+  padding: 9px 20px 11px
+  border: 1px solid #DA291C
+  border-radius: 40px
+
+
+.work-item-button-container
+  max-width: 361px
+  margin: 20px auto 0
+  border-top: 1px solid #E3E3E3
+  padding-top: 20px
+
+.work-item__button
+  display: block
+  width: 100%
+  text-align: center
+  font-weight: 400
+  font-size: 16px
+  line-height: 120%
+  padding: 16px 20px 18px
+  border-radius: 52px
+  background-color: #DA291C
+  color: #fff
+
+
+.work-expander.expander_unset .work-expander-hidden
+  overflow: visible
+  max-height: none
+
+.work-expander.expander_unset .work-expander-toggle-container
+  display: none
+
++mq(desktop, max)
+  .work-item__city
+    display: none
+
+  .work-item-video__caption,
+  .work-item-video-preview
+    display: none
+
++mq(desktop)
+  .work-wrapper
+    margin-bottom: 120px
+
+  .work__title
+    font-size: 40px
+    margin-bottom: 32px
+
+  .work-tabs-slider
+    padding-bottom: 16px
+
+  .work-inner-tabs
+    display: flex
+    gap: 16px
+
+  .work-dropdown
+    width: 300px
+    flex-shrink: 0
+    border-right: 1px solid #E3E3E3
+    margin: 0
+
+  .work-inner-tabs-panels
+    width: 100%
+    min-width: 0
+
+  .work-dropdown-current
+    display: none
+
+  .work-dropdown-hidden
+    position: static
+    visibility: visible
+    overflow: visible
+
+  .work-dropdown-list
+    position: static
+    transform: none
+    visibility: visible
+    opacity: 1
+    max-height: none
+
+  .work-expander
+    position: relative
+
+  .work-expander-hidden
+    max-height: 438px
+    overflow: hidden
+    transition: max-height $default-transition
+
+  .work-expander-toggle-container
+    margin-top: 16px
+    text-align: center
+
+  .work-expander__toggle
+    +button-preset
+    display: inline-block
+    padding: 12px 20px 14px
+    border: 1px solid #DA291C
+    border-radius: 50px
+
+  .work-dropdown-item
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+
+  .work-dropdown__button
+    padding: 10px 0 6px
+    border-bottom-width: 2px
+    color: #909090
+    transition: color $default-transition, border $default-transition
+
+  .work-dropdown__button:hover
+    color: #101820
+    border-bottom-color: #101820
+
+  .work-dropdown__button_tab-active,
+  .work-dropdown__button_tab-active:hover
+    border-bottom-color: #DA291C
+    color: #101820
+
+
+  .work-item
+    padding-top: 26px
+
+  .work-item-top
+    margin-bottom: 40px
+
+  .work-item__title
+    font-size: 20px
+    padding-bottom: 12px
+    border-bottom: 1px solid #E3E3E3
+    margin-bottom: 12px
+
+  .work-item__city
+    font-family: "Stolzl", sans-serif
+    font-weight: 400
+    font-size: 14px
+    line-height: 120%
+
+  .work-item-content
+    display: flex
+    gap: 12px
+
+
+  .work-item-slider
+    margin: 0
+    width: 600px
+    flex-shrink: 0
+    align-self: flex-start
+
+  .work-item-slider-arrows
+    right: 28px
+    bottom: 20px
+    gap: 12px
+
+  .work-item-slide
+    height: 348px
+
+  .work-item-info
+    display: flex
+    flex-direction: column
+    gap: 32px
+
+  .work-item-video-preview
+    position: relative
+    height: 204px
+    border-radius: 16px
+    overflow: hidden
+
+  .work-item-video-preview:before
+    content: ''
+    +absoluteFluid
+    background-color: #101E2266
+
+  .work-item-video-preview__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  .work-item-video-preview__icon
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 60px
+    height: 60px
+    margin-top: -30px
+    margin-left: -30px
+
+  .work-item-video__caption
+    margin-top: 8px
+    font-weight: 400
+    font-size: 16px
+    line-height: 120%
+
+  .work-item-video-button-container
+    display: none
+
+  .work-item-button-container
+    margin-top: auto
+    padding-top: 0
+    border-top: none
+    text-align: center
+
+  .work-item__button
+    width: auto
+    display: inline-block
+    padding: 14px 32px 16px
+    font-size: 16px
+
+
