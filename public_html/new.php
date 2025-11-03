@@ -285,9 +285,6 @@ $pageConfig = [
           <div class="template_geography__point j-show-review" data-citi-id="2209" data-city="Владивосток">
             <div class="template_geography__hint">Владивосток</div>
           </div>
-          <div class="template_geography__point j-show-review" data-citi-id="11" data-city="Москва">
-            <div class="template_geography__hint">Москва</div>
-          </div>
         </div>
         <div class="template_geography__points template_geography__points--active" data-type="engineers">
           <div class="template_geography__point" data-place="main">
