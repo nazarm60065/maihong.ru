@@ -35,7 +35,5 @@ node_modules
 
 /vendor
 /app
-/public_html/local/assets/local/
-/public_html/local/assets/mustache/
 
 composer.phar
