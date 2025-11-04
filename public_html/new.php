@@ -61,6 +61,7 @@ $pageConfig = [
           </div>
           <div class="why-us-main-card__value">10 000 м²</div>
           <div class="why-us-main-card__desc">Суммарная площадь<br> склада</div>
+          <a href="#" class="link-as-card"></a>
         </div>
         <div class="why-us-main-card">
           <div class="why-us-main-card-bg">
@@ -74,6 +75,7 @@ $pageConfig = [
           </div>
           <div class="why-us-main-card__title">Лизинг</div>
           <div class="why-us-main-card__desc">Гибкие условия,<br> первоначальный взнос от 0%</div>
+          <a href="#" class="link-as-card"></a>
         </div>
       </div>
       <div class="why-us-list">

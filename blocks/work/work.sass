@@ -172,7 +172,6 @@
   background-color: #DA291C
   color: #fff
 
-
 .work-expander.expander_unset .work-expander-hidden
   overflow: visible
   max-height: none
@@ -246,6 +245,11 @@
     padding: 12px 20px 14px
     border: 1px solid #DA291C
     border-radius: 50px
+    transition: background-color $default-transition, color $default-transition
+    
+  .work-expander__toggle:hover
+    background-color: #DA291C
+    color: #fff
 
   .work-dropdown-item
     margin-bottom: 20px
@@ -260,7 +264,6 @@
 
   .work-dropdown__button:hover
     color: #101820
-    border-bottom-color: #101820
 
   .work-dropdown__button_tab-active,
   .work-dropdown__button_tab-active:hover
@@ -301,6 +304,18 @@
     right: 28px
     bottom: 20px
     gap: 12px
+
+  .work-item-slider__arrow
+    transition: background-color $default-transition, border $default-transition
+    path
+      transition: $default-transition
+
+  .work-item-slider__arrow:not(.work-item-slider__arrow_disabled):hover
+    background-color: #DA291C
+    border-color: #DA291C
+    path
+      fill: #fff
+
 
   .work-item-slide
     height: 348px
@@ -355,5 +370,9 @@
     display: inline-block
     padding: 14px 32px 16px
     font-size: 16px
+    box-shadow: 0 0 4px 0 transparent
+    transition: box-shadow $default-transition, background-color $default-transition, color $default-transition
 
+  .work-item__button:hover
+    background-color: #101820
 

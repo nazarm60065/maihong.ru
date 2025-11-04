@@ -19,8 +19,12 @@
   width: 176px
   z-index: 0
   border-radius: 24px
-  overflow: hidden
   height: 313px
+
+.videos-slide-bg
+  border-radius: 24px
+  overflow: hidden
+  +absoluteFluid
 
 +mq(desktop, max)
   .videos-slider__arrow
@@ -36,6 +40,8 @@
 
   .videos-slider
     overflow: hidden
+    padding: 10px
+    margin: -10px
 
   .videos-slider__arrow
     +button-preset
@@ -48,7 +54,14 @@
     top: 50%
     margin-top: -25px
     z-index: 4
-    transition: opacity $default-transition
+    transition: opacity $default-transition, background-color $default-transition, color $default-transition
+    path
+      transition: $default-transition
+
+  .videos-slider__arrow:not(.videos-slider__arrow_disabled):hover
+    background-color: #DA291C
+    path
+      fill: #fff
 
   .videos-slider__arrow_prev
     text-indent: -3px
@@ -70,3 +83,8 @@
     width: 200px
     height: 356px
 
+  .videos-slide:hover .videos-slide-bg
+    transform: scale(1.02)
+
+  .videos-slide-bg
+    transition: transform $default-transition

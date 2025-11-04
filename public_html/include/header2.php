@@ -782,7 +782,16 @@ $mustache = new Mustache_Engine(array(
 
                 <li class="menu__item">
                   <a href="https://maihong.ru/about/" class="menu__link">
+                    <span class="menu__title">Партнёрам</span>
+                  </a>
+                </li><li class="menu__item">
+                  <a href="https://maihong.ru/about/" class="menu__link">
                     <span class="menu__title">О нас</span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="https://maihong.ru/services/" class="menu__link">
+                    <span class="menu__title">Контакты</span>
                   </a>
                 </li>
                 <li class="menu__item">
@@ -792,12 +801,12 @@ $mustache = new Mustache_Engine(array(
                 </li>
                 <li class="menu__item">
                   <a href="https://maihong.ru/news/" class="menu__link">
-                    <span class="menu__title">Новости</span>
+                    <span class="menu__title">Лизинг</span>
                   </a>
                 </li>
                 <li class="menu__item">
                   <a href="https://maihong.ru/blog/" class="menu__link">
-                    <span class="menu__title">Статьи</span>
+                    <span class="menu__title">Медиа</span>
                   </a>
                 </li>
 
@@ -816,7 +825,7 @@ $mustache = new Mustache_Engine(array(
             <div class="header-search-modal__overlay"></div>
             <form class="header-search-form">
               <div class="header-search-form-group">
-                <input type="text" class="header-search-form__control" name="q" placeholder="Введите запрос">
+                <input type="text" class="header-search-form__control" name="q" placeholder="Станки для обработки металла">
               </div>
               <button class="header-search-form__submit" type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
