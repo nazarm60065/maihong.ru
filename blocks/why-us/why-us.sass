@@ -115,16 +115,19 @@
     min-height: 188px
     padding: 24px 20px
     background-color: #000000
-    transition: background $default-transition
+    transition: background $default-transition 0.15s
     
   .why-us-main-card:hover
     background-color: #DA291C
+    transition: background $default-transition
 
   .why-us-main-card:hover .why-us-main-card-bg__img
     transform: scale(1.1, 1.1)
 
   .why-us-main-card:hover .why-us-main-card-bg:after
     opacity: 1
+    transition: opacity $default-transition
+    //transition: opacity $default-transition
 
   .why-us-main-card:hover .why-us-main-card-bg:before
     opacity: 0
@@ -149,16 +152,18 @@
     top: 0
     left: 0
     bottom: 0
-    width: 40%
-    transition: opacity $default-transition
+    width: 50%
 
   .why-us-main-card-bg:before
-    background: linear-gradient(270.04deg, rgba(0, 0, 0, 0) 51.16%, #000000 70.03%)
-    transition: opacity 0.15s
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 65%)
+    transition: opacity $default-transition
+
 
   .why-us-main-card-bg:after
     opacity: 0
-    background: linear-gradient(270.04deg, rgba(0, 0, 0, 0) 47.36%, #DA291C 66.13%)
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #DA291C 65%)
+    transition: opacity $default-transition 0.15s
+
 
   .why-us-main-card__value
     font-size: 64px
